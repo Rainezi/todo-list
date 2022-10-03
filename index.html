@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="styles.css"> 
+
+</head>
+
+<body>
+
+    <!-- Greeting and name input section -->
+
+    <main class="app">
+
+        <section class="greeting">
+
+            <h2 class="title">
+
+                What's up, <input type="text" id="name" placeholder="Name here">
+
+            </h2>
+
+        </section>
+        
+    <!-- Create To-Do section -->
+
+        <section class="create-todo">
+
+            <h3>
+                CREATE A TODO
+            </h3>
+
+            <!-- Write a task to add to the list -->
+
+            <form action="" id="new-todo-form">
+
+                <h4>What's on your todo list?</h4>
+                
+                    <input type="text" name="content" id="content" placeholder="e.g. finish homework">
+
+                <h4>Pick a category</h4>
+
+                <div class="options">
+
+                    <!-- Professional Tasks -->
+
+                    <label>
+
+                        <input type="radio" name="category" id="category1" value="professional">
+                        <span class="bubble professional"></span>
+                        <div>Professional</div>
+
+                    </label>
+
+                    <!-- Personal Tasks -->
+                    
+                    <label>
+
+                        <input type="radio" name="category" id="category2" value="personal">
+                        <span class="bubble personal"></span>
+                        <div>Personal</div>
+
+                    </label>
+
+                </div>
+
+                <!-- Adds todo to the list -->
+
+                <input type="submit" value="Add todo">
+
+            </form>
+
+        </section>
+
+		<!-- To-do List -->
+
+		<section class="todo-list">
+
+			<h3>TODO LIST</h3>
+			<div class="list" id="todo-list"></div>
+
+		</section>
+
+		<!-- End of Todo List -->
+
+	</main>
+
+	<script src="main.js"></script>
+
+</body>
+
+</html>
