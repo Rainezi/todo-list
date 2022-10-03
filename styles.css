@@ -31,6 +31,7 @@ input:not([type="radio"]):not([type="checkbox"]), button {
     appearance: none;
     border: none;
     outline: none;
+    width: 100%;
     background: none;
     cursor: initial;
 
